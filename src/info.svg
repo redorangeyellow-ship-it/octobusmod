@@ -3,16 +3,16 @@
    <style type="text/css">
        <![CDATA[
        @-webkit-keyframes wiggle {
-           0% { transform: translate(0,-10px); }
+           0% { transform: translate(0,-60px); }
            100% { transform: translate(12.0); }
        }
         @keyframes wiggle {
-            0% { transform: translate(0,-67px); }
+            0% { transform: translate(0,67px); }
             100% { transform: translate(0, 0); }
         }
         #arrow {
-            -webkit-animation: wiggle 4.5s infinite ease-in-out alternate;
-            animation: wiggle 0.10s infinite ease-in-out alternate;
+            -webkit-animation: wiggle 1.5s infinite ease-in-out alternate;
+            animation: wiggle 0.70s infinite ease-in-out alternate;
         }
        ]]>
       </style>
@@ -24,7 +24,7 @@
             <feMorphology radius="1.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
             <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
             <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0.298039216   0 0 0 0 0.592156863   0 0 0 0 1  0 0 0 0.25 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+            <feColorMatrix values="0 0 0 0 0.39216   0 0 0 0 0.592156863   0 0 0 0 1  0 0 0 0.25 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
         </filter>
     </defs>
     <g id="wedo-button-illustration" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
